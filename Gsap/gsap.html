@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    #main{
+        background-color: aqua;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .logo{
+        display: flex;
+    align-items: center;
+    }
+    .nav{
+        
+        display: flex;
+        /* justify-content: space-around;  */
+        padding: 20px;
+        gap:20px;
+    }
+    #banner{
+        background-color: black;
+        color: white;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+        font-size: 120px;
+    }
+</style>
+</head>
+<body>
+    <div id="main">
+        <div class="logo">Logo</div>
+        <div class="nav">
+            <div id="item">Home</div>
+            <div id="item">About</div>
+            <div id="item">Services</div>
+            <div id="item">Product</div>
+            <div id="item">Contact</div>
+        </div>
+
+    </div>
+<div id="banner">
+    <h1>B</h1>
+    <h1>a</h1>
+    <h1>n</h1>
+    <h1>n</h1>
+    <h1>e</h1>
+    <h1>r</h1>
+    <!-- <h1></h1>
+    <h1>b</h1>
+    <h1>a</h1>
+    <h1>n</h1>
+    <h1>o</h1> -->
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+const tl = gsap.timeline();
+tl.from(".logo",{
+  x:"100%",
+  duration:0.5,
+  delay:0.5,
+  opacity:0
+});
+tl.from("#item",{
+y: "100%",
+duration:0.5,
+delay:0.5,
+opacity:0,
+stagger:0.5
+});
+tl.from("#banner h1", {
+rotateY:180,
+duration:0.5,
+opacity:0.5,
+stagger:0.5
+});
+
+</script>
+</body>
+</html>
