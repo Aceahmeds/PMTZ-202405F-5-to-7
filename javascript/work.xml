@@ -1,0 +1,19 @@
+<!-- XML (Extensible Markup Language) is a markup language similar to HTML, but without predefined tags to use.
+ Instead, you define your own tags designed specifically for your needs. 
+This is a powerful way to store data in a format that can be stored, searched, and shared
+
+<?xml version ="1.0" encoding="UTF-8"?>
+<root>
+<tree>Ahmed</tree>
+<tree>Ali</tree>
+<tree>Mohamed</tree>
+</root>
+
+
+</xml> -->
+
+
+<!-- JSON (JavaScript Object Notation) is a lightweight data-interchange format. 
+It is easy for humans to read and write. It is easy for machines to parse and generate. 
+It is based on a subset of the JavaScript Programming Language Standard ECMA-262 3rd Edition 
+- December 1999. -->

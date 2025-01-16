@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 300px;
+            width: 300px;
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- //appendChild ma necha atta ha
+    <div class="parent"> Ahmed</div>  -->
+<!-- ======================================= appendChild    ===============================  -->
+<div id="parent">Parent</div>
+
+
+<script>
+// let mydiv = document.createElement("div");
+
+// mydiv.innerText = "Ali";
+// document.body.appendChild(mydiv); 
+
+// <!-- ======================================= // parent.appendChild=======================->
+
+let parent = document.getElementById("parent");
+let mydiv = document.createElement("div");
+mydiv.innerText = "Ahmed here";
+// parent.appendChild(mydiv);
+// parent.prepend(mydiv);
+// parent.before(mydiv);
+// parent.after(mydiv);
+// ====================================== body     ===========================================
+
+// document.body.appendChild(mydiv);
+// document.body.prepend(mydiv);
+// document.body.after(mydiv);
+document.body.before
+(mydiv);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
