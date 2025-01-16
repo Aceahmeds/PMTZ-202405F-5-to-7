@@ -1,0 +1,9 @@
+CREATE DATABASE Ahmed;
+use Ahmed;
+CREATE  TABLE  tbluser (
+id int  NOT null,
+name varchar(20),
+city varchar(20) 
+);
+SELECT * FROM tbluser;
+

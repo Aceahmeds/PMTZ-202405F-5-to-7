@@ -1,0 +1,30 @@
+create database ahmed;
+
+CREATE TABLE std(
+id int priamry key AUTO_INCREMENT,
+name varchar(100) not null,
+age int not null CHECK(age > 18)    
+);
+SELECT * FROM tbluser;
+
+//error
+INSERT INTO tbluser(name,email,age) VALUES
+ ("M Ahmed Khan","abc@gmail.com","17");
+
+
+// insert
+INSERT INTO tbluser(name,email,age) VALUES
+ ("Ahmed","abc@gmail.com","22");
+//  multiple insert data
+INSERT INTO tbluser(name,email,age) VALUES ("M Ahmed Khan","abc@gmail.com","17")
+,("Zain","abc@gmail.com","25");
+
+
+//UPDATE
+
+
+
+//DELETE
+
+
+
