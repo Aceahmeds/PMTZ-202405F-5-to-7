@@ -1,0 +1,22 @@
+create database class6;
+
+CREATE table cites(
+id int PRIMARY KEY AUTO_INCREMENT,
+name varchar(50) not null
+);
+
+CREATE table students(
+id int PRIMARY KEY AUTO_INCREMENT,
+name varchar(50),
+age int not null,
+city_id int not null,
+FOREIGN KEY(city_id) REFERENCES cites(id)
+
+);
+
+INSERT INTO cites(name) VALUES ("Ahmed"),("Ali"),("Moid");
+
+INSERT INTO students (name,age,city_id) VALUES ("Ahmed","22","1"),("Ali","20","2"),("Moid","24","3");
+
+
+SELECT * FROM students INNER JOIN cites ON students.city_id = cites.id;
